@@ -1,0 +1,17 @@
+{
+  "name": "aula-classe",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Nessa parte, vamos exercitar o conceito de classes, criar métodos para manipular os dados internos da classe e conhecer duas sintaxes novas: `get` e `delete`.",
+  "main": "index.js",
+  "scripts": {
+    "gabarito": "node correcao.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
