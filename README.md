@@ -4,7 +4,6 @@
 
 Clone e instale este repositório utilizando os comandos:
 ```bash
-git clone git@github.com:tetsuo-matsumura/aula-classes.git
 cd aula-classes
 npm i
 ```
