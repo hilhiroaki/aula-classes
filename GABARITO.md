@@ -25,14 +25,14 @@ class Register {
 
 ### `.add(data)`
 Recebe qualquer tipo de dado, cria um `id` usando o método `getToken()` e adiciona no `this.data`. Retorna o objeto inteiro.
-```
+```javascript
 {
   [id]: data
 }
 ```
 
 
-```
+```javascript
 // GABARITO
 class Register {
   constructor() {
@@ -54,7 +54,7 @@ A propriedade `length` deve retornar a quantidade de chaves no objeto `this.data
 
 Você deverá usar a [sintaxe de get](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/get) para solucionar essa etapa.
 
-```
+```javascript
 // GABARITO
 class Register {
   constructor() {
@@ -76,7 +76,7 @@ class Register {
 ### `.findById(id)`
 Recebe uma string `id`, busca uma chave com o valor dessa string e retorna o valor armazenado nessa chave.
 
-```
+```javascript
 // GABARITO
 class Register {
   constructor() {
@@ -102,7 +102,7 @@ class Register {
 ### `.updateById(id, newValue)`
 Recebe uma string `id`, busca uma chave com o valor dessa string, substitui o valor armazenado pelo `newValue` e retorna o objeto completo.
 
-```
+```javascript
 // GABARITO
 class Register {
   constructor() {
@@ -133,7 +133,7 @@ class Register {
 ### `.deleteById(id)`
 Recebe uma string `id`, busca uma chave com o valor dessa string e [deleta](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete) a chave e o valor. Retorna o objeto completo.
 
-```
+```javascript
 // GABARITO
 class Register {
   constructor() {
@@ -170,7 +170,7 @@ class Register {
 ### `.addMany(dataArray)`
 Recebe uma array de dados e adiciona no `this.data` cada uma delas, atribuindo um `id` único usando o método `getToken`. Retorna o objeto completo no final.
 
-```
+```javascript
 // GABARITO
 class Register {
   constructor() {
@@ -217,12 +217,12 @@ Nessa parte, vamos criar outra classe, exercitar a interação entre elas, conhe
 
 ### Crie uma Classe chamada Database com a propriedade `this.registers` inicializada como um objeto vazio.
 Teste que funciona executando o seguinte código:
-```
+```javascript
 const database = new Database()
 console.log(database) // { Database: { registers: {} }}
 ```
 
-```
+```javascript
 // GABARITO
 class Database {
   constructor() {
@@ -237,7 +237,7 @@ class Database {
 Recebe uma string `name`, adiciona em `this.registers` a chave com valor de `name` e em valor uma nova instância de Register. Retorna o objeto de registros.
 - Caso `name` já exista em `this.registers` você deve retornar apenas o objeto, sem adicionar nada novo.
 
-```
+```javascript
 // GABARITO
 class Database {
   constructor() {
@@ -258,7 +258,7 @@ Recebe uma string `name`, adiciona em `this.registers` a chave com valor de `nam
 - Caso não seja, apenas retorne o objeto completo
 - Caso `name` já exista em `this.registers` você deve retornar apenas o objeto, sem adicionar nada novo.
 
-```
+```javascript
 // GABARITO
 class Database {
   constructor() {
@@ -284,7 +284,7 @@ A propriedade `length` deve retornar a quantidade de chaves no objeto `this.data
 
 Você deverá usar a [sintaxe de get](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Functions/get) para solucionar essa etapa.
 
-```
+```javascript
 // GABARITO
 class Database {
   constructor() {
@@ -341,7 +341,7 @@ class Database {
 ```
 
 ### `.load(filename)`
-Recebe uma string `filename` e carrega um arquivo um arquivo com extensão `.tet` todos os registers em . Lembre-se de usar os métodos `JSON.stringify` e `JSON.parse` para lidar com entrada e saída de arquivos.
+Recebe uma string `filename` e carrega de um arquivo um arquivo com extensão `.tet` todos os registers. Para cada Register, deve-se Lembre-se de usar os métodos `JSON.stringify` e `JSON.parse` para lidar com entrada e saída de arquivos.
 
 ``````javascript
 // GABARITO
@@ -371,7 +371,6 @@ class Database {
   }
 
   load(filename) {
-    
     this.registers = JSON.parse(fs.readFileSync(`${filename}.tet`, 'utf-8'))
   }
 }
