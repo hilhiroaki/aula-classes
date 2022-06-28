@@ -1,5 +1,22 @@
 # Aula de Classes
 
+## Inicializando
+
+Clone e instale este repositório utilizando os comandos:
+```bash
+git clone git@github.com:tetsuo-matsumura/aula-classes.git
+cd aula-classes
+npm i
+```
+
+Para rodar o nodemon basta usar `npm run dev`
+Inicialize a auto correção usando `npm run gabarito`
+
+Não mexa nos aquivos `correcao.js` e `getToken.js`. 
+O código deverá ser escrito no arquivo `index.js`.
+
+Há um gabarito com solução em código no arquivo [`GABARITO.md`](https://github.com/tetsuo-matsumura/aula-classes/blob/main/GABARITO.md).
+
 ## Parte 1
 Nessa parte, vamos exercitar o conceito de classes, criar métodos para manipular os dados internos da classe e conhecer duas sintaxes novas: `get` e `delete`.
 
