@@ -24,7 +24,7 @@ console.log('============================')
 
 assert('Register should instantiate', async () => {
   registerInstance = new Register()
-  if(registerInstance instanceof Register) {
+  if(registerInstance instanceof Register && registerInstance.data) {
     return true
   }
   throw new Error('registerInstance is not an instance of Register')
@@ -32,7 +32,7 @@ assert('Register should instantiate', async () => {
 
 assert('Database should instantiate', async () => {
   databaseInstance = new Database()
-  if(databaseInstance instanceof Database) {
+  if(databaseInstance instanceof Database && databaseInstance.registers) {
     return true
   }
   throw new Error('databaseInstance is not an instance of Register')
