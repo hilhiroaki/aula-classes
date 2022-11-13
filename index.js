@@ -8,7 +8,7 @@ let cover = ""
 
 class Register {
     constructor(data){
-        this.data = {}
+        this.data = {} 
     }
 
     add(data){

@@ -10,7 +10,7 @@
 // 2- Um coelho chamado José
 // 3- Adicione o coelho josé na lista de pets de Luna
 // 4- Crie um gato chamado Kuro
-// 5- Adicione Kuro na lista de pets da Luna
+// 5- Adicione Kuro na lista de pets da Luna 
 
 class Pessoa {
     constructor(primeiroNome, sobrenome, idade){
