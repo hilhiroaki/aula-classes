@@ -94,3 +94,4 @@ Recebe uma string `filename` e salva todos os registers em um arquivo com extens
 ### `.load(filename)`
 Recebe uma string `filename` e carrega de um arquivo um arquivo com extensão `.tet` todos os registers. Para cada Register, deve-se Lembre-se de usar os métodos `JSON.stringify` e `JSON.parse` para lidar com entrada e saída de arquivos.
 
+# aula-classes
